@@ -18,6 +18,18 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+	(function(){
+	   emailjs.init({
+		 publicKey: "AJDFLxdxv1mPhFYjh",
+	   });
+	})();
+ </script>
+ <script src="js/mail.js"></script>
+
 	<style>
 
 .google-map{
@@ -97,7 +109,7 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+										<p><span>Address:</span>Kessels Street, Near GRA</p>
 									</div>
 								</div>
 							</div>
@@ -170,7 +182,7 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
+													<input type="submit" value="Send Message" class="btn btn-primary" onclick="sendMail()">
 													<div class="submitting"></div>
 												</div>
 											</div>

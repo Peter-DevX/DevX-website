@@ -18,6 +18,14 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+		(function(){
+		   emailjs.init({
+			 publicKey: "AJDFLxdxv1mPhFYjh",
+		   });
+		})();
+	 </script>
+	 <script src="js/mail.js"></script>
 
 	<style>
 
@@ -552,12 +560,12 @@ h1 {
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" id="name" class="form-control" placeholder="Your Name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email">
+									<input type="text" class="form-control" id="email" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -565,7 +573,7 @@ h1 {
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
+											<select name="" id="subject" class="form-control">
 												<option value="">Services</option>
 												<option value="">Web Development</option>
 												<option value="">Database Analysis</option>
@@ -580,12 +588,12 @@ h1 {
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+									<input type="submit" value="Send message" class="btn btn-primary py-3 px-4" onclick="sendMail()">
 								</div>
 							</div>
 						</div>
