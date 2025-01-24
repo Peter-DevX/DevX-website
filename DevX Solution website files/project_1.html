@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DevX Solutions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+<style>
+    /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f2641;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Project Section Styles */
+.projects {
+  margin-top: 8rem;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 4rem ;
+}
+
+.project {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* animation: fadeIn 1s ease-in-out; */
+}
+
+.project img {
+  width: 44%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.video {
+  width: 44%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 9s ease;
+}
+
+/* .project img:hover {
+  transform: none;
+}
+
+
+.video:hover {
+  transform: scale(1);
+} */
+
+.project .description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex: 1;
+}
+
+.mob-view-description{
+    display: none;
+   }
+
+.project h2 {
+  font-size: 1.5rem;
+  color: #1f2641;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Reverse Layout */
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.reverse.mob-view-description{
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .project {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .project .video {
+    width: 100%;
+  }
+
+  .project >.description{
+    display: none;
+  }
+
+  .mob-view-description h2,p{
+    text-align: center;
+  }
+
+  .project .mob-view-description{
+    margin-top: 1rem;
+    display: block;
+  }
+  .reverse >.mob-view-description{
+    display: block;
+}
+
+.project.reverse{
+    flex-direction: column;
+  }
+   
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0.9rem;
+}
+
+   .mob-view-description{
+    display: block;
+   }
+
+.project{
+    height: 100%;
+}
+  .project h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .project .description{
+    display: none;
+    margin: none;
+    padding: none;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .project p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .project.reverse{
+    flex-direction: column;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="wrap">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-md d-flex align-items-center">
+					<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:0598339175">+233 5983 39175</a> or <span class="mailus">email us:</span> <a href="mailto:devxxsolutions@gmail.com">info@devxsolutions.io</a></p>
+				</div>
+				<div class="col-12 col-md d-flex justify-content-md-end">
+					<div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="https://www.linkedin.com/in/devx-solutions-573602337/" class="d-flex align-items-center justify-content-center"><span class="fa fa-linkedin"><i class="sr-only">Linkedin</i></span></a>
+							<a href="https://x.com/DevX_Solutions" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="https://www.instagram.com/devx_solutions/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">DevX<span>Solutions</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+  <main>
+    <!-- Project Section -->
+    <section class="projects">
+        <h1>Our Featured Projects</h1>
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="images/web1.png" alt="Project 1 Image">
+        <div class="description">
+          <h2>E-Commerce Web App</h2>
+          <p>This e-commerce website was designed to provide users with a seamless shopping experience. It features a clean, intuitive interface, secure payment gateways, and responsive design to ensure accessibility across all devices. DevX leveraged a customer-centric approach, focusing on understanding the target audience and business goals. Utilizing agile development, we combined robust backend technologies with modern frontend frameworks for high performance and scalability. The web application is optimized for speed, search engine visibility, and user engagement, ensuring a competitive edge in the online marketplace.</p>
+        </div>
+       <div class="mob-view-description">
+        <h2>E-Commerce Web App</h2>
+        <p>Seamless, responsive, secure, optimized e-commerce.</p>
+       </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project reverse">
+        <img src="images/web2.jpg" alt="Project 2 Image">
+        <div class="description">
+          <h2>Construction Website</h2>
+          <p>DevX Solutions approached the development of a construction website with a focus on delivering a robust, user-friendly, and visually appealing platform tailored to meet the specific needs of the construction industry. Understanding the importance of showcasing the client’s expertise, projects, and services effectively, our team began with a thorough consultation phase to identify the core objectives, target audience, and unique selling points of the construction company. This ensured that the website would not only represent the brand professionally but also serve as a powerful tool for client engagement and lead generation.
+
+            Leveraging the latest web technologies, we designed and developed a fully responsive website that ensures seamless navigation across devices, from desktops to mobile phones.</p>
+        </div>
+        <div class="mob-view-description">
+            
+           </div>
+           <div class="mob-view-description">
+            <h2>Construction Website</h2>
+            <p>Seamless, responsive, secure, optimized constructions website</p>
+           </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project">
+        <video src="images/car vid.mp4" autoplay muted loop class="video">
+            <source  type="video/mp4" "Project 3 Image">
+        </video>
+        
+        <div class="description">
+          <h2>AutoHaven</h2>
+          <p>DevX Solutions developed this car website with a focus on delivering a seamless user experience and modern design. The platform is powered by advanced backend technologies to ensure fast performance and secure transactions. Utilizing responsive design principles, the website is optimized for all devices, providing users with easy navigation and a visually engaging interface. DevX also integrated robust search and filtering features, allowing customers to find their perfect car effortlessly. With scalable architecture and intuitive functionality, this platform redefines convenience in buying and selling cars online.</p>
+        </div>
+        <div class="mob-view-description">
+            <h2>E-Commerce Web App</h2>
+            <p>Seamless, responsive, secure, optimized e-commerce.</p>
+           </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project reverse">
+        <img src="images/mob-app-2.webp" alt="Project 4 Image">
+        <div class="description">
+          <h2>Productivity App</h2>
+          <p>IDevX Solutions crafted this app to seamlessly blend productivity and wellness, empowering users to balance their daily schedules with mindful practices. By combining innovative planning tools with an extensive library of guided yoga exercises, the app fosters organization and self-care. Leveraging a user-centric design, DevX ensured the interface is intuitive, responsive, and engaging across all devices. Advanced analytics provide personalized recommendations for both planning and yoga routines, enhancing user experience. With a focus on scalability, performance, and holistic well-being, this app redefines how users manage their time and health in harmony.</p>
+        </div>
+        <div class="mob-view-description">
+            <h2>AutoHaven</h2>
+            <p>Secureand Optimized platform for buying and selling cars</p>
+           </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project">
+        <video src="images/mob-app-vid.mp4" autoplay muted loop class="video">
+            <source  type="video/mp4" "Project 3 Image">
+        </video>
+        <div class="description">
+          <h2>Culinary App</h2>
+          <p>
+            DevX Solutions designed and developed this app to revolutionize the dining experience by seamlessly connecting restaurants with their customers. With a user-friendly interface, the app allows users to browse menus, place orders, make reservations, and access personalized recommendations effortlessly. DevX employed cutting-edge technologies to ensure fast performance, robust security, and smooth integration with restaurant management systems. The app's responsive design provides a consistent experience across all devices, while advanced analytics empower restaurants to optimize their services.</p>
+        </div>
+        <div class="mob-view-description">
+            <h2>Culinary App</h2>
+            <p>A seamless, engaging platform for exploring and enjoying culinary delights developed by DevX</p>
+           </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project reverse">
+        <img src="images/mob-app.webp" alt="Project 6 Image">
+        <div class="description">
+          <h2>Banking App</h2>
+          <p>DevX Solutions developed this banking app to redefine financial services by delivering a secure, seamless, and user-friendly digital banking experience. The app enables users to manage accounts, transfer funds, pay bills, and access personalized financial insights effortlessly. Leveraging advanced encryption and multi-factor authentication, DevX ensured top-tier security for sensitive transactions. The app’s intuitive design provides a smooth navigation experience across all devices, while its robust backend ensures high performance and scalability. By combining innovative technology with a customer-centric approach, DevX delivered a comprehensive solution that empowers users to take control of their finances anytime, anywhere.</p>
+        </div>
+        <div class="mob-view-description">
+            <h2>Banking App</h2>
+            <p>A secure, user-friendly platform for seamless digital banking experiences.</p>
+           </div>
+      </div>
+
+      <div class="project">
+        <img src="images/web-analysis.jpg" alt="Project 7 Image">
+        <div class="description">
+          <h2>Web Analysis App</h2>
+          <p>DevX Solutions crafted this web analysis app to empower businesses with actionable insights into their online performance. The app provides real-time analytics, traffic monitoring, user behavior tracking, and SEO insights through an intuitive and visually engaging interface. By integrating advanced data processing and AI-powered analytics, DevX ensured the app delivers accurate, in-depth reports that drive data-driven decisions. Its responsive design guarantees seamless usability across devices, while robust security measures protect sensitive data. With a focus on performance and usability, DevX delivered a cutting-edge solution that helps businesses optimize their web presence and achieve measurable growth.</p>
+        </div>
+        <div class="mob-view-description">
+            <h2>Web Analysis App</h2>
+            <p>A powerful, intuitive platform for tracking and optimizating website performance</p>
+           </div>
+           <div class="mob-view-description">
+    </div>
+    </section>
+  </main>
+  <footer class="ftco-footer ftco-footer-2 ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-footer-logo">DevX<span>Solutions</span></h2>
+                    <p>In the world of innovation, beyond the boundaries of conventional solutions, DevX thrives in creating impactful software and training services, empowering businesses and individuals to achieve their full potential.</p>
+                    <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li class="ftco-animate"><a href="https://x.com/DevX_Solutions"><span class="fa fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.linkedin.com/in/devx-solutions-573602337/"><span class="fa fa-linkedin"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.instagram.com/devx_solutions/"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-5">
+                    <h2 class="ftco-heading-2">Explore</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="py-2 d-block">About</a></li>
+                        <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+                        <li><a href="services.html" class="py-2 d-block">What We Do</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Legal</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                        <li><a href="conditions.html" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                        <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">Accra, Ghana</span></li>
+                            <li><a href="tel:0598339175"><span class="icon fa fa-phone"></span><span class="text">+223 5983 39175</span></a></li>
+                            <li><a href="mailto:devxxsolutions@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@devxsolutions.io/span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | DevX Solutions 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
