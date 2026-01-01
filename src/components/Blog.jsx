@@ -13,7 +13,7 @@ const Blog = () => {
       author: "Sarah Chen",
       excerpt:
         "Learn best practices for structuring React apps that can grow with your business needs.",
-      image: "src/assets/scalable-react-app.jpg",
+      image: "./src/assets/scalable-react-app.jpg",
       readTime: "8 min",
       tags: ["React", "Architecture", "Performance"],
     },
@@ -25,7 +25,7 @@ const Blog = () => {
       author: "James Wilson",
       excerpt:
         "Exploring how artificial intelligence is transforming how we build and deploy web applications.",
-      image: "src/assets/AI-in-web-development.png",
+      image: "./src/assets/AI-in-web-development.png",
       readTime: "10 min",
       tags: ["AI", "Machine Learning", "Web Dev"],
     },
@@ -61,7 +61,7 @@ const Blog = () => {
   return (
     <section
       id="blog"
-      className="py-20 px-5 sm:px-12 lg:px-24 xl:px-40 bg-white dark:bg-gray-900"
+      className="py-20 mt-30 sm:px-12 lg:px-24 xl:px-40 bg-white dark:bg-gray-900"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -162,7 +162,7 @@ const Blog = () => {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-400">
                     By {post.author}
                   </span>
-                  
+
                   <a
                     href="https://silkdata.tech/blog/article/ai-web-development"
                     className="text-primary font-semibold hover:gap-2 flex items-center gap-1 transition-all"
