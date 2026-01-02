@@ -3,10 +3,43 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-* {
+html,
+body {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  cursor: none;
+}
+
+/* Enable custom cursor only on devices that support hover (desktop) */
+@media (hover: hover) {
+  * {
+    cursor: none;
+  }
+}
+
+@media (hover: none) {
+  * {
+    cursor: default;
+  }
+}
+
+/* Responsive image defaults */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Helper: ensure hero positioning works */
+#hero {
+  position: relative;
 }
 
 @theme {

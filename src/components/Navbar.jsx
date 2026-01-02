@@ -17,61 +17,55 @@ const Navbar = ({ theme, setTheme }) => {
         <img
           src={theme === "dark" ? assets.logo : assets.logo}
           alt="logo"
-          className="2-32 sm:w-20 sm:h-10"
+          className="w-32 sm:w-20 sm:h-10"
         />
         <h2 className="pt-2 dark:text-white">DevX Solutions</h2>
       </div>
-      <div
-        className={`text-gray-700 dark:text-white sm:text-sm ${
-          !sidebarOpen
-            ? "max-sm:w-0 overflow-hidden"
-            : "max-sm:w-60 max-sm:pl-10"
-        } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-fulll max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
-      >
-        <img
-          src={assets.close_icon}
-          alt="close-icon"
-          className="w-5 absolute right-4 top-4 sm:hidden"
-          onClick={() => setSidebarOPen(false)}
-        />
-
-        <a
-          onClick={() => setSidebarOPen(false)}
-          href="#"
-          className="sm:hover:border-b"
-        >
+      {/* Desktop links */}
+      <div className="hidden sm:flex text-gray-700 dark:text-white sm:text-sm items-center gap-5">
+        <a href="#" className="hover:border-b">
           Home
         </a>
-        <a
-          onClick={() => setSidebarOPen(false)}
-          href="#services"
-          className="sm:hover:border-b"
-        >
+        <a href="#services" className="hover:border-b">
           Services
         </a>
-        <a
-          onClick={() => setSidebarOPen(false)}
-          href="#our-work"
-          className="sm:hover:border-b"
-        >
+        <a href="#our-work" className="hover:border-b">
           Our Work
         </a>
-        <a
-          onClick={() => setSidebarOPen(false)}
-          href="#blog"
-          className="sm:hover:border-b"
-        >
+        <a href="#blog" className="hover:border-b">
           Blog
         </a>
-        <a
-          onClick={() => setSidebarOPen(false)}
-          href="#contact-us"
-          className="sm:hover:border-b"
-        >
+        <a href="#contact-us" className="hover:border-b">
           Contact Us
         </a>
-        
       </div>
+
+      {/* Mobile sidebar (renders when open) */}
+      {sidebarOpen && (
+        <div className="lg:hidden fixed overflow-hidden top-0 right-0 bottom-0 w-60 h-199 bg-primary text-white p-8 z-50 flex flex-col gap-6">
+          <img
+            src={assets.close_icon}
+            alt="close"
+            className="w-5 self-end static"
+            onClick={() => setSidebarOPen(false)}
+          />
+          <a onClick={() => setSidebarOPen(false)} href="#">
+            Home
+          </a>
+          <a onClick={() => setSidebarOPen(false)} href="#services">
+            Services
+          </a>
+          <a onClick={() => setSidebarOPen(false)} href="#our-work">
+            Our Work
+          </a>
+          <a onClick={() => setSidebarOPen(false)} href="#blog">
+            Blog
+          </a>
+          <a onClick={() => setSidebarOPen(false)} href="#contact-us">
+            Contact Us
+          </a>
+        </div>
+      )}
 
       <div className="flex items-center gap-2 sm:gap-4">
         <ThemeToggleBtn theme={theme} setTheme={setTheme} />
@@ -79,11 +73,11 @@ const Navbar = ({ theme, setTheme }) => {
           src={theme === "dark" ? assets.menu_icon_dark : assets.menu_icon}
           onClick={() => setSidebarOPen(true)}
           className="w-8 sm:hidden"
-          alt=""
+          alt="menu"
         />
         <a
           href="mailto:info@devxsolutions.co"
-          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
+          className="text-sm hidden sm:flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
         >
           Connect <img src={assets.arrow_icon} alt="contact us" width={14} />
         </a>

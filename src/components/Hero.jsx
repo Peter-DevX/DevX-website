@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white"
+      className="relative flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.7 }}
         viewport={{ once: true }}
-        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-23.7 max-w-5xl"
+        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium leading-tight max-w-5xl"
       >
         Turning imagination into{" "}
         <span className="bg-linear-to-r from-primary to-[#4d8cea] bg-clip-text text-transparent">
@@ -39,20 +39,22 @@ const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 1 }}
         viewport={{ once: true }}
-        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w-lg pb-3"
+        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-[80%] sm:max-w-lg pb-3"
       >
         Creating meaningful connections and turning big ideas into interactive
         digital experiences
       </motion.p>
 
-      <motion.div initial={{opacity:0, scale: 0.9}}
-    whileInView={{opacity:1, scale:1}}
-    transition={{duration: 0.6, delay:2}}
-    viewport={{once: true}}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 2 }}
+        viewport={{ once: true }}
+      >
         <img src={hero_img} alt="" className="w-full max-w-6xl" />
         <img
           src={assets.bgImage1}
-          className="absolute -top-40 -right-40 sm:-top-100 sm:right-70 -z-1 dark:hidden"
+          className="absolute -top-[40px] -right-[40px] sm:-top-[100px] sm:right-[70px] z-[-1] dark:hidden"
           alt=""
         />
       </motion.div>
